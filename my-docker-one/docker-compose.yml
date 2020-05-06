@@ -1,0 +1,13 @@
+version: '3.4'
+
+services:
+  db:
+    image: postgres:10
+    environment:
+      - DB_HOST=db
+      - DB_NAME=postgres
+      - DB_USER=postgres
+      - DB_PORT=5432
+      - DB_PASSWARD=123456
+    ports:
+    - 5432:5432
